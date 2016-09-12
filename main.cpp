@@ -8,6 +8,8 @@
 
 #include <stdio.h>
 #include LinkedList.cpp
+#include <iostream>
+using namespace std;
 
 int main()
 {
