@@ -63,16 +63,16 @@ linkedListIterator<Type>::operator++()
 }
 
 template<class Type>
-bool linkedListIterator<Tyoe>::operator==
+bool linkedListIterator<Type>::operator==
         (const linkedListIterator<Type> &right) const{
     return (current == right.current);
 }
 
 template<class Type>
-bool linkedListIterator<Type>::operator!+
+bool linkedListIterator<Type>::operator!=
         (const linkedListIterator<Type> &right) const
 {
-    return (current !- right.current);
+    return (current != right.current);
 }
 
 template <class Type>
@@ -118,7 +118,7 @@ private:
 template<class Type>
 linkedListType<Type>::linkedListType()
 {
-    first = NNULL;
+    first = NULL;
     last = NULL;
     count = 0;
 }
@@ -402,7 +402,7 @@ void unorderedLinkedList<Type>::deleteAllSmall()
     
     nodeType<Type> *current;
     current = first;
-    Type item = currnet->info;
+    Type item = current->info;
     int count = 1;
     
     current = current->link;
